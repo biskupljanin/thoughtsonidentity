@@ -1,0 +1,41 @@
+html {
+  --red:#c51e26;
+  --blue:#0045aa;
+  --orange:#ff8800;
+}
+ 
+body {
+  margin: 0;
+  background-color: var(--orange);
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+h1,h2,h3 {
+  color: var(--red);
+  margin-bottom: 2rem;
+}
+
+.main-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+}
+
+@media screen and (max-width: 640px) {
+
+  .main-screen{
+    width: fit-content;
+  }
+
+
+}
